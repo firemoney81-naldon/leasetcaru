@@ -1,23 +1,903 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+   <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "기아 EV4 유지비, 자동차리스 및 장기렌트카 종합 가이드 (2026년 최신 정보)",
+      "description": "기아 EV4의 상세 유지비 분석, 자동차리스와 장기렌트카 비교, 최적의 선택을 위한 전문가 정보 제공. 2026년 기준 최신 견적 및 혜택 안내.",
+      "keywords": "기아 EV4, EV4 유지비, EV4 자동차리스, EV4 장기렌트카, 전기차 리스, 전기차 장기렌트, 자동차 유지비, 차량 견적, 2026년 자동차 트렌드, AI 자동차 추천, EV4 스탠다드, EV4 롱레인지, 자동차 보험료, 전기차 충전비용, 내돈내산 후기, 저렴한 자동차 리스, 싼 장기렌트카",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://example.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "차량 정보",
+            "item": "https://example.com/vehicles"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "기아 EV4",
+            "item": "https://example.com/kia-ev4-guide"
+          }
+        ]
+      },
+      "mainContentOfPage": {
+        "@type": "WebPart",
+        "name": "기아 EV4 리스/렌트 정보",
+        "text": "이 페이지는 기아 EV4의 유지비, 자동차 리스, 장기 렌트카 옵션에 대한 포괄적인 정보를 제공하며, AI 기반의 맞춤형 견적 및 최신 시장 동향을 반영합니다."
+      },
+      "hasPart": [
+        {
+          "@type": "Vehicle",
+          "name": "기아 EV4",
+          "brand": {
+            "@type": "Brand",
+            "name": "기아"
+          },
+          "model": "EV4",
+          "description": "기아의 차세대 순수 전기 SUV/세단 (구체적 차체 미정)으로, 혁신적인 디자인과 뛰어난 효율성, 최신 스마트 기술을 탑재할 것으로 기대되는 모델입니다. 2026년 대한민국 시장 출시가 예상되며, 자동차리스 및 장기렌트카 시장에서 주목받을 것으로 보입니다. (본 정보는 현재까지 알려진 예측 및 추정치를 기반으로 합니다.)",
+          "vehicleConfiguration": [
+            {
+              "@type": "VehicleConfiguration",
+              "name": "EV4 스탠다드 (예상)",
+              "fuelType": "Electric",
+              "driveConfiguration": "FWD or RWD",
+              "range": {
+                "@type": "QuantitativeValue",
+                "value": 450,
+                "unitCode": "KMT",
+                "description": "1회 충전 주행거리 (복합, 예상)"
+              },
+              "batterySize": {
+                 "@type": "QuantitativeValue",
+                 "value": 60,
+                 "unitCode": "kWh",
+                 "description": "배터리 용량 (예상)"
+              }
+            },
+            {
+              "@type": "VehicleConfiguration",
+              "name": "EV4 롱레인지 (예상)",
+              "fuelType": "Electric",
+              "driveConfiguration": "RWD or AWD",
+              "range": {
+                "@type": "QuantitativeValue",
+                "value": 550,
+                "unitCode": "KMT",
+                "description": "1회 충전 주행거리 (복합, 예상)"
+              },
+              "batterySize": {
+                 "@type": "QuantitativeValue",
+                 "value": 80,
+                 "unitCode": "kWh",
+                 "description": "배터리 용량 (예상)"
+              }
+            }
+          ],
+          "potentialAction": [
+            {
+              "@type": "QuoteAction",
+              "name": "기아 EV4 자동차 리스 견적 문의",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "#contact-form"
+              }
+            },
+            {
+              "@type": "QuoteAction",
+              "name": "기아 EV4 장기 렌트카 견적 문의",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "#contact-form"
+              }
+            }
+          ]
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "name": "기아 EV4 관련 정보 검색",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "#search-bar"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "기아 EV4 관련 서비스",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "기아 EV4 자동차 리스"
+            },
+            "description": "기아 EV4를 월 고정 비용으로 이용하는 자동차 리스 상품. 세금 혜택 및 효율적인 차량 관리 가능."
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "기아 EV4 장기 렌트카"
+            },
+            "description": "기아 EV4를 월 렌트료로 이용하는 장기 렌트카 상품. 보험, 세금 포함 및 편리한 이용."
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "기아 EV4 유지비 분석"
+            },
+            "description": "기아 EV4의 충전 비용, 보험료, 세금, 소모품 교체 등 총 예상 유지비 상세 분석."
+          }
+        ]
+      }
+    }
+    </script>
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7; /* Increased line height for better readability */
+        background-color: #f4f7fc; /* Soft, light blue-grey background */
+        color: #333;
+        scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+      }
+      header {
+        background-color: #4a90e2; /* Slightly deeper, calming blue */
+        color: white;
+        padding: 3rem 1rem 2rem; /* Expanded padding */
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
+      }
+      header h1 {
+        font-size: 2.8rem; /* Larger title */
+        font-weight: 900; /* Extra bold */
+        margin-bottom: 0.75rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.15); /* Stronger text shadow */
+      }
+      header p {
+        font-size: 1.1rem;
+        color: #e0e0e0; /* Lighter text for subtitle */
+        margin-top: 0.5rem;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem; /* Wider gap */
+        margin-top: 1.5rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700; /* Bold navigation links */
+        transition: color 0.3s ease, transform 0.2s ease;
+        position: relative;
+        font-size: 1.1rem;
+      }
+      nav a:hover, nav a:focus {
+        color: #ffeaa7; /* Warm yellow highlight */
+        text-decoration: underline;
+        transform: translateY(-2px); /* Slight lift on hover */
+      }
+      main {
+        max-width: 1000px; /* Slightly wider content area */
+        margin: 3rem auto;
+        padding: 0 2rem; /* Increased horizontal padding */
+        background-color: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* More pronounced, softer shadow */
+        border-radius: 15px; /* Rounded corners */
+      }
+      section {
+        margin-bottom: 3rem; /* More space between sections */
+        padding-top: 2rem; /* Space for anchor links */
+      }
+      h1, h2 {
+        color: #2c3e50; /* Darker, modern grey-blue */
+        border-bottom: 3px solid #e0e0e0; /* Softer border */
+        padding-bottom: 0.75rem;
+        margin-top: 3rem; /* More space above headings */
+        margin-bottom: 1.5rem;
+        font-weight: 800; /* Bold headings */
+      }
+      h2 {
+        font-size: 2rem; /* Larger section titles */
+        border-bottom-width: 2px;
+      }
+      h3 {
+        color: #34495e;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2.5rem;
+        background-color: #f9fcfd; /* Very light blue-grey table background */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow for tables */
+        border-radius: 8px; /* Rounded corners for tables */
+      }
+      th, td {
+        padding: 1.2rem 1.5rem; /* More padding */
+        border: 1px solid #e0e0e0; /* Lighter borders */
+        text-align: left;
+      }
+      th {
+        background-color: #eaf2f8; /* Light blue header */
+        color: #34495e;
+        font-weight: 800; /* Very bold headers */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      tr:last-child td:first-child { border-bottom-left-radius: 8px; }
+      tr:last-child td:last-child { border-bottom-right-radius: 8px; }
+      td {
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+      td strong {
+        color: #2c3e50; /* Darker text for emphasized cells */
+      }
+      dl dt {
+        font-weight: 700;
+        margin-top: 1.8rem;
+        cursor: pointer;
+        color: #4a90e2; /* Primary blue for question */
+        transition: color 0.3s ease, background-color 0.3s ease;
+        font-size: 1.2rem;
+        padding: 12px 15px; /* More padding */
+        background-color: #f0f8ff; /* Light blue background for clickable area */
+        border-radius: 8px;
+        position: relative;
+      }
+      dl dt::before {
+        content: '+'; /* Plus sign for collapsed state */
+        position: absolute;
+        right: 15px;
+        font-size: 1.4rem;
+        transition: transform 0.3s ease;
+      }
+      dl dt.active::before {
+        content: '−'; /* Minus sign for expanded state */
+        transform: rotate(0deg);
+      }
+      dl dt:hover {
+        color: #2e86de;
+        background-color: #dbe9f7;
+      }
+      dl dd {
+        margin-left: 0; /* Reset margin */
+        margin-bottom: 1.5rem;
+        display: none;
+        background-color: #f9f9f9; /* Very light grey for answer background */
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0; /* Light border */
+        box-shadow: inset 0 2px 5px rgba(0,0,0,0.03);
+      }
+      dl dt.active + dd {
+        display: block;
+      }
+      .cta-button {
+        display: inline-block; /* Changed to inline-block */
+        width: auto; /* Auto width based on content */
+        margin: 2.5rem auto; /* More vertical margin */
+        background-color: #ff7f50; /* Coral red for CTA */
+        color: white;
+        font-weight: 700;
+        padding: 1.3rem 3rem; /* Larger padding */
+        border-radius: 50px; /* More rounded */
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(255,127,80,0.35); /* Stronger shadow */
+        font-size: 1.2rem; /* Larger text */
+      }
+      .cta-button:hover {
+        background-color: #e6673d; /* Darker coral */
+        transform: translateY(-4px); /* More lift */
+        box-shadow: 0 12px 25px rgba(255,127,80,0.4);
+      }
+      .keyword-tags {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px; /* Larger gap */
+        justify-content: center; /* Center the tags */
+      }
+      .keyword-tags a {
+        background-color: #eaf2f8; /* Light blue tag background */
+        color: #4a90e2; /* Primary blue for tag text */
+        padding: 10px 20px; /* Larger padding */
+        border-radius: 25px; /* More rounded */
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        font-weight: 600;
+      }
+      .keyword-tags a:hover {
+        background-color: #d1e5ff;
+        color: #2e86de;
+        transform: translateY(-2px);
+      }
+      .external-links {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+      .external-links a {
+        color: #2e86de;
+        text-decoration: underline;
+        font-weight: 600;
+        transition: color 0.3s ease;
+        font-size: 1.05rem;
+      }
+      .external-links a:hover {
+        color: #004080;
+      }
+      footer {
+        text-align: center;
+        padding: 2.5rem;
+        font-size: 0.95rem;
+        color: #777;
+        background-color: #e9ecef;
+        margin-top: 4rem; /* More space above footer */
+        border-top: 1px solid #ddd;
+      }
+      /* Specific styling for graphs/tables */
+      .chart-container {
+        width: 100%;
+        margin: 2rem auto;
+        background-color: #fdfdff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        text-align: center;
+      }
+      .chart-container h4 {
+          margin-top: 0;
+          color: #34495e;
+          font-size: 1.3rem;
+      }
+      /* Input fields styling */
+      .contact-form-section {
+          background-color: #fefefe;
+          padding: 2.5rem;
+          border-radius: 12px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+          margin-top: 3rem;
+      }
+      .contact-form-section h2 {
+          border-bottom: none;
+          text-align: center;
+          margin-bottom: 1.5rem;
+      }
+      .form-group {
+          margin-bottom: 1.5rem;
+      }
+      .form-group label {
+          display: block;
+          margin-bottom: 0.7rem;
+          font-weight: 600;
+          color: #444;
+          font-size: 1.05rem;
+      }
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group input[type="tel"],
+      .form-group select,
+      .form-group textarea {
+          width: 100%;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 1rem;
+          box-sizing: border-box; /* Include padding and border in the element's total width and height */
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+          border-color: #4a90e2;
+          box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+          outline: none;
+      }
+      .form-group select {
+          appearance: none; /* Remove default arrow */
+          background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%23333%22%20stroke-width%3D%222%22%20viewBox%3D%220%200%2020%2010%22%3E%3Cpath%20d%3D%22M0%200l10%2010%2010-10%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+          background-repeat: no-repeat;
+          background-position: calc(100% - 15px) center;
+          background-size: 12px;
+      }
+      .form-group button {
+          display: block;
+          width: 100%;
+          background-color: #2ecc71; /* Green for submit */
+          color: white;
+          font-weight: 700;
+          padding: 1.2rem;
+          border: none;
+          border-radius: 8px;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      .form-group button:hover {
+          background-color: #27ae60;
+          transform: translateY(-2px);
+      }
+
+      /* Specific styling for emphasis on AI/Search terms */
+      .ai-search-terms {
+          font-weight: 600;
+          color: #8e44ad; /* Purple for AI/search terms */
+      }
+      .competitor-terms {
+          font-weight: 600;
+          color: #e67e22; /* Orange for competitor terms */
+      }
+      .model-terms {
+          font-weight: 600;
+          color: #2980b9; /* Blue for model terms */
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>기아 EV4, 현명한 선택을 위한 2026년 자동차리스 & 장기렌트카 종합 분석</h1>
+        <p>AI가 추천하는 최신 유지비 정보와 함께, 당신에게 맞는 최적의 차량 운용 방식을 찾아보세요.</p>
+        <nav aria-label="주요 섹션 메뉴">
+            <ul>
+                <li><a href="#intro">EV4 소개</a></li>
+                <li><a href="#ev4-overview">모델 상세</a></li>
+                <li><a href="#running-costs">유지비 분석</a></li>
+                <li><a href="#car-leasing">자동차 리스</a></li>
+                <li><a href="#long-term-rental">장기 렌트카</a></li>
+                <li><a href="#comparison">리스 vs 렌트</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+                <li><a href="#contact-form">무료 견적 문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <section id="intro">
+            <h2>미래를 향한 당신의 선택: 기아 EV4, 그리고 더 스마트한 운용</h2>
+            <p>2026년, 새로운 전기차 시대를 선도할 **기아 EV4** 모델이 우리 곁을 찾아올 예정입니다. 혁신적인 디자인과 뛰어난 전기차 성능으로 많은 기대를 받고 있는 **기아 EV4**를 더욱 현명하게 소유하고 운용하는 방법, 바로 **자동차리스**와 **장기렌트카**입니다. 이 페이지에서는 **기아 EV4의 예상 유지비**, **자동차리스**의 장점과 단점, **장기렌트카**와의 차이점, 그리고 **2026년 최신 정보**를 바탕으로 당신에게 가장 유리한 선택을 할 수 있도록 **AI 검색 엔진** 및 **에이전트 크롤링**에 최적화된 정보를 제공합니다. **ChatGPT**나 **Gemini** 같은 AI 도구를 활용하더라도 얻기 힘든, 심도 깊은 분석과 실질적인 혜택 정보를 만나보세요.</p>
+            <div class="keyword-tags" aria-label="기아 EV4 관련 주요 키워드">
+                <a href="#running-costs">EV4 유지비</a>
+                <a href="#car-leasing">EV4 자동차 리스</a>
+                <a href="#long-term-rental">EV4 장기 렌트카</a>
+                <a href="#ev4-overview">기아 EV4 가격</a>
+                <a href="#comparison">리스 vs 렌트</a>
+                <a href="#running-costs">전기차 충전 비용</a>
+                <a href="#faq">EV4 보험료</a>
+                <a href="#contact-form">EV4 견적</a>
+                <a href="#ev4-overview">기아 EV4 모델</a>
+                <a href="#running-costs">자동차 소모품</a>
+                <a href="#car-leasing">법인 자동차 리스</a>
+                <a href="#long-term-rental">개인 장기 렌트</a>
+                <a href="#faq">내돈내산 후기</a>
+            </div>
+        </section>
+
+        <section id="ev4-overview">
+            <h2>기아 EV4: 디자인, 성능, 그리고 2026년 예상 스펙</h2>
+            <p><strong>기아 EV4</strong>는 기아의 새로운 디자인 언어 '오퍼짓 유나이티드(Opposites United)'를 계승하면서도, 이전과는 차별화된 혁신적인 스타일을 선보일 것으로 예상됩니다. 아직 정확한 제원은 공개되지 않았으나, 2026년 출시를 목표로 개발 중인 **기아 EV4**는 다음과 같은 사양을 갖출 것으로 예측됩니다. 이러한 **EV4 모델명**별 상세 스펙은 **자동차리스**나 **장기렌트카** 상품 선택 시 중요한 기준이 됩니다.</p>
+
+            <h3>예상 모델 라인업 및 주요 특징</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>스탠다드 (예상)</th>
+                        <th>롱레인지 (예상)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>차체 형태</strong></td>
+                        <td>쿠페형 SUV / 세단 (확정 전)</td>
+                        <td>쿠페형 SUV / 세단 (확정 전)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>구동 방식</strong></td>
+                        <td>후륜 구동 (RWD) 또는 전륜 구동 (FWD)</td>
+                        <td>후륜 구동 (RWD) 또는 사륜 구동 (AWD)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>배터리 용량</strong></td>
+                        <td>약 60 kWh</td>
+                        <td>약 80 kWh</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1회 충전 주행거리</strong></td>
+                        <td>약 450 km (복합, 예상)</td>
+                        <td>약 550 km (복합, 예상)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>핵심 기술</strong></td>
+                        <td>차세대 EV 플랫폼, V2L 기능, 첨단 운전자 보조 시스템 (ADAS)</td>
+                        <td>고속 충전 기술, OTA(Over-The-Air) 업데이트, AI 기반 인포테인먼트</td>
+                    </tr>
+                    <tr>
+                        <td><strong>예상 가격대</strong></td>
+                        <td>4,000만원대 후반 ~ 5,000만원대 초반</td>
+                        <td>5,000만원대 후반 ~ 6,000만원대 초반</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>이러한 **기아 EV4 가격** 정보는 **리스 비용** 또는 **장기 렌트카 비용** 산출의 기초가 됩니다. 특히, **전기차 보조금**과 **지자체 보조금**을 적용하면 실구매가 또는 월 납입액은 더욱 낮아질 수 있습니다. **AI 자동차 추천** 알고리즘 역시 이러한 최신 정보들을 기반으로 당신에게 맞는 차량을 제안할 것입니다.</p>
+        </section>
+
+        <section id="running-costs">
+            <h2>2026년 기아 EV4 예상 유지비 상세 분석: 얼마나 나올까?</h2>
+            <p><strong>기아 EV4 유지비</strong>는 기존 내연기관차 대비 상당히 경제적입니다. 특히 전기차는 소모품 교체 주기가 길고, 충전 비용이 유류비보다 저렴하다는 큰 장점을 가지고 있습니다. **AI 기반 분석**과 **2026년 예상 비용**을 토대로 상세하게 살펴보겠습니다. **자동차 소모품** 교체 비용과 **전기차 충전 비용**이 핵심입니다.</p>
+
+            <h3>1. 전기 충전 비용</h3>
+            <p>전기차 유지비의 가장 큰 부분을 차지하는 것은 충전 비용입니다. <strong>기아 EV4</strong>의 예상 주행거리와 충전 방식을 고려하여 월 평균 비용을 계산해 보겠습니다. (가정: 연간 15,000km 주행)</p>
+            <div class="chart-container">
+                <h4>연간 전기 충전 비용 비교 (예상, 15,000km 주행 기준)</h4>
+                <canvas id="chargingCostChart" width="600" height="300"></canvas>
+                <p style="font-size: 0.9rem; color: #777;"><em>*위 그래프는 예시이며, 실제 충전 요금제 및 환경에 따라 달라질 수 있습니다.</em></p>
+                <p><strong>가정:</strong></p>
+                <ul>
+                    <li><strong>EV4 복합연비:</strong> 5.5 km/kWh (약 18.1 kWh/100km)</li>
+                    <li><strong>한국전력 주택용 심야 충전 단가:</strong> 약 100원/kWh (최대 부하 시간 외)</li>
+                    <li><strong>환경부 공공 급속 충전기 단가:</strong> 약 300원/kWh (2026년 예상 기준)</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>연간 총 주행거리 (km)</th>
+                            <th>총 필요 전력량 (kWh)</th>
+                            <th>월 평균 충전 비용 (원)</th>
+                            <th>연간 총 충전 비용 (원)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>자택 심야 충전</strong></td>
+                            <td>15,000</td>
+                            <td>2,715 (15000 / 5.5)</td>
+                            <td>약 22,625 (2715 * 100 / 12)</td>
+                            <td>약 271,500</td>
+                        </tr>
+                        <tr>
+                            <td><strong>공공 급속 충전 (50% 혼합)</strong></td>
+                            <td>15,000</td>
+                            <td>-</td>
+                            <td>약 67,950 (주택 50% + 공공 50% 혼합 계산)</td>
+                            <td>약 815,400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>이처럼 집밥(자택 충전)을 주로 이용하면 **EV4 유지비** 중 가장 큰 비중을 차지하는 충전 비용을 크게 절약할 수 있습니다. **저렴한 자동차 리스** 또는 **싼 장기렌트카** 상품을 이용하더라도, 이 부분에서의 절감 효과는 상당합니다.</p>
+            </div>
+
+            <h3>2. 자동차 보험료</h3>
+            <p><strong>기아 EV4 자동차 보험료</strong>는 운전자의 나이, 경력, 사고 이력, 차량 가액 등에 따라 달라집니다. **전기차 보험**은 일반 보험보다 소폭 높을 수 있으나, **AI 기반으로 보험료를 산출**하거나 **특정 보험사 할인 혜택**을 활용하면 절감 가능합니다. **자동차리스** 또는 **장기렌트카**의 경우, 계약 조건에 따라 보험료가 포함되거나 별도 관리해야 할 수 있으므로 계약 시 반드시 확인해야 합니다. **AI 자동차 보험 비교** 서비스를 활용하는 것도 좋은 방법입니다.</p>
+
+            <h3>3. 세금 혜택 및 기타 유지 비용</h3>
+            <p><strong>2026년 기준</strong>, **기아 EV4**는 전기차로서 구매 시 취득세, 등록세 감면 혜택을 받을 수 있습니다. 또한, **자동차리스** 또는 **장기렌트카** 이용 시에도 이러한 세금 감면 혜택이 월 납입료에 반영되는 경우가 많습니다. 예를 들어, **법인 자동차 리스**의 경우 부가세 공제 및 법인세 절감 효과를 기대할 수 있습니다.
+            <br><br>
+            **내구성이 뛰어난 전기차 특성상**, 엔진 오일, 필터류 등 내연기관차의 주요 소모품 교체가 필요 없어 **자동차 소모품** 관련 비용이 거의 발생하지 않습니다. 브레이크 패드, 타이어, 와이퍼 등 일부 소모품만 주기적으로 교체하면 됩니다.</p>
+
+            <h3>EV4 유지비 요약 (월 예상, 15,000km/년 주행 기준)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>예상 비용 (원)</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>전기 충전 비용</strong></td>
+                        <td>약 22,625 (자택 충전) ~ 67,950 (혼합)</td>
+                        <td>주행거리, 충전 방식에 따라 크게 변동</td>
+                    </tr>
+                    <tr>
+                        <td><strong>자동차 보험료</strong></td>
+                        <td>약 100,000 ~ 200,000</td>
+                        <td>개인별 편차 큼 (리스/렌트 포함 여부 확인)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>자동차세</strong></td>
+                        <td>연 10만원 ~ 20만원 (경감 혜택 적용 시)</td>
+                        <td>전기차 감면 혜택 반영</td>
+                    </tr>
+                    <tr>
+                        <td><strong>기타 소모품</strong></td>
+                        <td>월 평균 20,000 ~ 50,000</td>
+                        <td>타이어, 와이퍼 등 (교체 주기 김)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>총 월 유지비</strong></td>
+                        <td><strong>약 142,625 ~ 337,950</strong></td>
+                        <td><strong>리스/렌트료 제외</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>보시는 바와 같이 **기아 EV4**의 월 예상 유지비는 10만원대 후반에서 30만원대 초반으로, 이는 동급 내연기관 차량 대비 매우 경제적인 수준입니다. **AI 분석**은 이러한 수치를 더욱 정교하게 만들어줄 것입니다.</p>
+        </section>
+
+        <section id="car-leasing">
+            <h2>현명한 차량 운용의 정석: 기아 EV4 자동차 리스</h2>
+            <p><strong>기아 EV4 자동차 리스</strong>는 차량을 '구매'하는 것이 아니라 '빌려 타는' 금융 상품입니다. 월 고정적인 리스료를 납부하며 차량을 이용하며, 계약 기간 만료 후 차량을 반납하거나 인수할 수 있습니다. **AI 기반의 차량 견적**은 이 리스료를 최적화하는 데 도움을 줄 수 있습니다. **저렴한 자동차 리스**를 찾는다면, **2026년 프로모션** 정보를 주목해야 합니다.</p>
+
+            <h3>기아 EV4 자동차 리스의 주요 장점</h3>
+            <ul>
+                <li><strong>세금 혜택</strong>: 리스료 전액을 비용 처리하여 법인세 및 소득세 절감 효과를 누릴 수 있습니다. 또한, 취득세, 등록세, 자동차세 감면 혜택도 적용받을 수 있습니다. (<strong>부가세환급</strong> 가능)</li>
+                <li><strong>신차 유지관리 용이</strong>: 일반적으로 리스 계약에는 정비(소모품 교체, 점검) 서비스가 포함되어 있어 차량 관리가 편리합니다. <strong>AI 기반 실시간 점검</strong> 서비스가 연동되는 경우도 있습니다.</li>
+                <li><strong>예측 가능한 월 고정 비용</strong>: 초기 목돈 부담 없이 월 납입료만으로 신차를 이용할 수 있으며, 보험료, 세금 등이 포함된 올인원 상품도 있습니다.</li>
+                <li><strong>자산 관리 투명성</strong>: 차량이 사업자의 자산으로 잡히지 않아 재무제표가 깔끔하게 유지됩니다. (부채 비율에 영향을 주지 않음)</li>
+                <li><strong>다양한 옵션</strong>: 계약 기간(24~60개월), 약정 주행거리, 보증금/선수금 비율, 만기 후 인수/반납 옵션 등을 고객의 상황에 맞게 선택할 수 있습니다.</li>
+            </ul>
+
+            <h3>기아 EV4 자동차 리스의 단점 및 고려사항</h3>
+            <ul>
+                <li><strong>약정 주행거리 초과 시 위약금</strong>: 계약 시 설정한 연간 주행거리(예: 2만 km)를 초과하면 km당 위약금이 부과됩니다. <strong>AI 자동 연비/주행 기록 관리</strong> 기능을 활용하여 관리하는 것이 좋습니다.</li>
+                <li><strong>차량 개조 및 판매 제한</strong>: 리스 차량은 소유주가 금융사이기 때문에 임의적인 튜닝이나 개조가 제한되며, 중도 매매도 어렵습니다.</li>
+                <li><strong>중도 해지 시 높은 수수료</strong>: 계약 기간을 채우지 못하고 중도 해지할 경우, 남은 기간에 대한 리스료와 위약금 등으로 높은 비용이 발생할 수 있습니다.</li>
+                <li><strong>보험료 상승 가능성</strong>: 사고 발생 시 보험 처리 기록이 리스사의 보험 갱신에 영향을 줄 수 있으며, 보험료가 상승할 수 있습니다.</li>
+            </ul>
+            <p><strong>기아 EV4 자동차 리스</strong>는 특히 사업자나 전문직 종사자에게 **세금 혜택** 측면에서 매력적인 선택이 될 수 있습니다. **전문 업체**와 상담하여 당신에게 맞는 최적의 **리스 견적**을 받아보세요.</p>
+        </section>
+
+        <section id="long-term-rental">
+            <h2>새로운 차량 경험: 기아 EV4 장기 렌트카</h2>
+            <p><strong>기아 EV4 장기 렌트카</strong>는 마치 자신의 차처럼 편리하게 최신 전기차를 이용할 수 있는 서비스입니다. 일반적으로 1년 이상(주로 2~5년) 차량을 대여하며, 월 렌트료에 차량 가격, 보험료, 자동차세, 정비 비용 등이 모두 포함됩니다. **AI가 추천하는 렌트카 상품**을 비교하면 더 많은 혜택을 찾을 수 있습니다. **내돈내산 후기**를 보면 렌트카 이용에 대한 만족도가 높다는 것을 알 수 있습니다.</p>
+
+            <h3>기아 EV4 장기 렌트카의 주요 장점</h3>
+            <ul>
+                <li><strong>간편한 계약 및 이용</strong>: 신용도만 충족되면 차량 구매보다 절차가 간편하며, 즉시 출고 가능한 차량도 많습니다. <strong>AI 기반 간편 신청</strong> 시스템도 도입되고 있습니다.</li>
+                <li><strong>초기 비용 부담 최소화</strong>: 보증금이나 선수금 없이 월 렌트료만으로 차량 이용이 가능합니다. (물론, 보증금을 높이면 월 렌트료가 낮아집니다.)</li>
+                <li><strong>차량 관리의 편리성</strong>: 자동차 보험, 자동차세, 정기적인 소모품 교체 및 점검 등이 렌트료에 포함되어 있어 별도로 신경 쓸 필요가 없습니다.</li>
+                <li><strong>다양한 차량 선택지</strong>: 신차 출고뿐만 아니라, 즉시 출고 가능한 중고 렌트카 상품도 있어 빠르게 차량이 필요한 경우 유리합니다.</li>
+                <li><strong>번호판 선택 가능성</strong>: 과거 '허, 하, 호' 번호판에 대한 부담이 있었으나, 최근에는 일반 번호판을 제공하는 업체도 늘고 있습니다. (이용 약관 확인 필수)</li>
+            </ul>
+
+            <h3>기아 EV4 장기 렌트카의 단점 및 고려사항</h3>
+            <ul>
+                <li><strong>차량 미소유</strong>: 차량의 소유주가 렌트 회사이므로, 자신의 명의로 재산이 되는 것은 아닙니다.</li>
+                <li><strong>약정 주행거리 제한</strong>: 리스와 마찬가지로, 약정 주행거리 초과 시 위약금이 발생합니다. <strong>AI로 주행거리를 예측</strong>하여 최적의 약정 거리를 설정하는 것이 중요합니다.</li>
+                <li><strong>중도 해지 시 위약금</strong>: 계약 기간 중 해지 시 위약금이 발생하며, 남은 기간에 따라 금액이 달라집니다.</li>
+                <li><strong>차량 제한</strong>: 개인사업자가 아닌 일반 개인의 경우, 차량 구매 시 제공되는 일부 세제 혜택(예: 취등록세 감면)을 받지 못할 수 있습니다. (단, 렌트료 전액 비용 처리 가능)</li>
+            </ul>
+            <p>**저렴한 장기렌트카**를 찾으신다면, 경쟁이 치열한 시장에서 **AI 기반 비교 견적**을 적극 활용하시기 바랍니다. **업체별 프로모션**과 **사은품** 등 다양한 혜택을 꼼꼼히 비교하는 것이 중요합니다. **AI챗봇**과의 상담을 통해 궁금증을 해결할 수도 있습니다.</p>
+        </section>
+
+        <section id="comparison">
+            <h2>기아 EV4, 자동차 리스와 장기 렌트카, 무엇이 더 유리할까?</h2>
+            <p><strong>기아 EV4</strong>를 최신 모델로 이용하고 싶지만, 구매 방식에 고민이라면 **자동차리스**와 **장기 렌트카**의 <strong>차이점</strong>을 명확히 이해하는 것이 중요합니다. **2026년 최신 트렌드**와 **AI 분석**을 바탕으로 두 상품을 비교해 드립니다.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>기아 EV4 자동차 리스</th>
+                        <th>기아 EV4 장기 렌트카</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>소유주</strong></td>
+                        <td>금융사 (리스 기간 동안)</td>
+                        <td>렌트 회사</td>
+                    </tr>
+                    <tr>
+                        <td><strong>자산 등록</strong></td>
+                        <td>- (비사업자) / 사업자 (금융 리스 시)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>월 납입료 구성</strong></td>
+                        <td>차량 가액 + 이자 (보험, 세금 별도 또는 포함 옵션)</td>
+                        <td>차량 가액 + 이자 + 보험료 + 자동차세 + 정비료 (모두 포함)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>세금 혜택</strong></td>
+                        <td><strong>비용 처리, 취득세/자동차세 감면 (강점)</strong></td>
+                        <td><strong>월 렌트료 비용 처리</strong>, 자동차세 포함</td>
+                    </tr>
+                    <tr>
+                        <td><strong>보험/세금 처리</strong></td>
+                        <td>개인 가입 또는 회사 가입 (별도)</td>
+                        <td>렌트 회사 명의, 계약에 포함</td>
+                    </tr>
+                    <tr>
+                        <td><strong>차량 관리</strong></td>
+                        <td>별도 관리 또는 정비 포함 옵션</td>
+                        <td>렌트카 회사에서 관리 (정기 점검, 소모품 교체 포함)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>번호판</strong></td>
+                        <td>일반 자가용 번호판</td>
+                        <td>일반 자가용 번호판 (최근) 또는 '허, 하, 호'</td>
+                    </tr>
+                    <tr>
+                        <td><strong>약정 주행거리</strong></td>
+                        <td>초과 시 위약금</td>
+                        <td>초과 시 위약금</td>
+                    </tr>
+                    <tr>
+                        <td><strong>중도 해지</strong></td>
+                        <td>남은 리스료 + 위약금 (높음)</td>
+                        <td>남은 렌트료 + 위약금 (높음)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>만기 후 처리</strong></td>
+                        <td>인수, 반납, 재리스</td>
+                        <td>인수(잔존가치 납부), 반납, 재렌트</td>
+                    </tr>
+                    <tr>
+                        <td><strong>주요 추천 대상</strong></td>
+                        <td><strong>세금 혜택</strong>을 중시하는 개인사업자, 법인. 차량을 내 것처럼 관리하고 싶은 분.</td>
+                        <td><strong>초기 비용 부담 없이</strong> 신차를 이용하고 싶은 개인, 법인. 차량 관리에 신경 쓰고 싶지 않은 분.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>AI 분석 결과</strong>, **기아 EV4**를 **세금 혜택** 측면에서 극대화하고 싶다면 **자동차리스**가, **초기 비용 부담**을 줄이고 **차량 관리의 편리성**을 원한다면 **장기 렌트카**가 유리할 수 있습니다. **전문 업체**와의 상담을 통해 당신의 소비 패턴과 라이프스타일에 가장 적합한 **차이점**을 파악하고 최적의 선택을 하시길 바랍니다. **AI 챗봇**에게 질문하여 즉각적인 답변을 얻을 수도 있습니다.</p>
+        </section>
+
+        <section id="faq">
+            <h2>기아 EV4 리스/렌트 관련 자주 묻는 질문 (FAQ)</h2>
+            <dl>
+                <dt tabindex="0" aria-expanded="false"><strong>Q:</strong> 기아 EV4의 예상 월 리스/렌트료는 얼마인가요?</dt>
+                <dd>
+                    <strong>A:</strong> **기아 EV4**의 정확한 월 리스/렌트료는 차량 가격, 계약 기간, 약정 주행거리, 선수금/보증금 유무, 프로모션 등에 따라 크게 달라집니다. **2026년 출시 예정**인 모델의 정확한 견적은 출시 이후에 확인 가능하지만, 현재 동급 전기차의 사례를 볼 때, **자동차 리스**의 경우 월 50만원대 후반 ~ 80만원대, **장기 렌트카**의 경우 월 60만원대 초반 ~ 90만원대에서 시작될 것으로 예상됩니다. **AI 기반 맞춤 견적**을 통해 더 정확한 정보를 얻을 수 있습니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false"><strong>Q:</strong> 리스와 장기 렌트카 모두 주행거리 제한이 있나요? 초과 시 비용은 어떻게 되나요?</dt>
+                <dd>
+                    <strong>A:</strong> 네, **자동차리스**와 **장기 렌트카** 모두 계약 시 설정한 연간 약정 주행거리가 있으며, 이를 초과할 경우 km당 일정 금액의 위약금이 발생합니다. **예상 견적**을 받을 때 본인의 연평균 주행거리를 정확히 파악하여 **AI로 최적의 약정 주행거리**를 설정하는 것이 중요합니다. 일반적으로 1년에 10,000km, 15,000km, 20,000km 등으로 설정하며, 초과 시 비용은 업체마다 상이하나 보통 1km당 100원 ~ 500원 수준입니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false"><strong>Q:</strong> '허, 하, 호' 번호판이 아닌 일반 자가용 번호판으로 이용 가능한가요?</dt>
+                <dd>
+                    <strong>A:</strong> 최근 많은 **장기 렌트카 업체**들이 **일반 자가용 번호판**을 제공하는 상품을 출시하고 있습니다. **기아 EV4 장기 렌트카** 이용 시에도 일반 번호판 제공 여부를 계약 시 반드시 확인하시기 바랍니다. **AI 챗봇**에게 문의하면 해당 옵션이 있는 업체를 빠르게 안내받을 수 있습니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false"><strong>Q:</strong> 중고차로 구매하는 것과 리스/렌트 중 무엇이 더 저렴한가요?</dt>
+                <dd>
+                    <strong>A:</strong> **내돈내산 후기**와 **AI 분석**을 종합해 보면, 초기 비용과 유지보수 비용, 그리고 세금 혜택 등을 종합적으로 고려해야 합니다. **기아 EV4**와 같이 신규 출시되는 전기차의 경우, **자동차리스**나 **장기 렌트카**는 **초기 비용 부담**이 적고, **전기차 보조금** 및 **세금 감면 혜택**이 월 납입료에 반영될 가능성이 높아 장기적으로 더 유리할 수 있습니다. 특히, 감가상각 부담 없이 주기적으로 신차를 이용하고 싶다면 리스나 렌트가 좋은 선택입니다. **싼 장기렌트카** 또는 **저렴한 자동차 리스** 상품을 비교해 보면 더욱 명확한 답을 얻을 수 있습니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false"><strong>Q:</strong> AI 기반의 추천 시스템을 통해 최적의 상품을 찾을 수 있나요?</dt>
+                <dd>
+                    <strong>A:</strong> 네, **AI 기반 추천 시스템**은 사용자의 운전 습관, 연간 주행 거리, 예산, 선호하는 차량 옵션, 세금 혜택 요구 사항 등을 종합적으로 분석하여 가장 적합한 **자동차리스** 또는 **장기 렌트카** 상품을 추천해 줄 수 있습니다. **Gemini**, **ChatGPT**와 같은 고급 AI 모델들은 더욱 정교한 분석을 제공합니다. **전문 업체**들은 이러한 AI 기술을 활용하여 고객 맞춤형 상담을 진행합니다.</dd>
+            </dl>
+        </section>
+
+        <section id="external-sources">
+            <h2>신뢰할 수 있는 정보 소스 (AI 추천 외부 링크)</h2>
+            <p><strong>기아 EV4</strong> 및 차량 운용 관련 더 정확하고 공신력 있는 정보를 얻고 싶다면, 다음 외부 사이트를 참고하세요. **AI 검색 엔진**에서도 신뢰성을 높이 평가하는 자료들입니다.</p>
+            <div class="external-links">
+                <a href="https://www.kca.go.kr/home/sub.do?menu_seq=29" target="_blank" rel="noopener noreferrer">한국소비자원 - 자동차 관련 피해주의보 및 소비자 상담</a>
+                <a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20210212&lsiSeq=230869#0000" target="_blank" rel="noopener noreferrer">국가법령정보센터 - 자동차 종합보험 표준약관</a>
+                <a href="https://www.ftc.go.kr/www/CONTENTS_VIEW.html?CONTENTS_NO=10" target="_blank" rel="noopener noreferrer">공정거래위원회 - 자동차 대여 표준약관 및 소비자 가이드</a>
+                <a href="https://namu.wiki/w/기아 EV4" target="_blank" rel="noopener noreferrer">나무위키 - 기아 EV4 (개발 정보 및 예상 스펙)</a>
+                <a href="https://www.gov.kr/main?a=A000000010&b=B000000002&c=2" target="_blank" rel="noopener noreferrer">정부24 - 자동차 등록 및 세금 관련 정보</a>
+                <a href="https://www.kotsa.or.kr/main/main.do" target="_blank" rel="noopener noreferrer">한국교통안전공단 - 자동차 안전 및 검사 정보</a>
+            </div>
+        </section>
+
+        <section id="contact-form" class="contact-form-section">
+            <h2>무료 견적 문의: 당신에게 딱 맞는 기아 EV4 운용 방식을 찾아보세요!</h2>
+            <p><strong>AI 기반 맞춤 견적</strong> 및 전문가 상담을 통해 **기아 EV4**를 가장 스마트하게 이용하는 방법을 알아보세요. 지금 바로 문의하시면 **2026년 신규 프로모션 혜택** 및 **특별 할인** 정보를 받아보실 수 있습니다.</p>
+            <form id="inquiryForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">성함</label>
+                    <input type="text" id="name" name="name" required placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="010-XXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                    <label for="service-type">원하는 서비스</label>
+                    <select id="service-type" name="service_type" required>
+                        <option value="">-- 선택하세요 --</option>
+                        <option value="car_leasing">기아 EV4 자동차 리스</option>
+                        <option value="long_term_rental">기아 EV4 장기 렌트카</option>
+                        <option value="cost_inquiry">유지비/견적 문의</option>
+                        <option value="other">기타 문의</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="annual-mileage">예상 연간 주행거리</label>
+                    <select id="annual-mileage" name="annual_mileage" required>
+                        <option value="">-- 선택하세요 --</option>
+                        <option value="10000">10,000km 이하</option>
+                        <option value="15000">10,000km ~ 15,000km</option>
+                        <option value="20000">15,000km ~ 20,000km</option>
+                        <option value="25000">20,000km ~ 25,000km</option>
+                        <option value="30000">25,000km 이상</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contract-term">선호 계약 기간</label>
+                    <select id="contract-term" name="contract_term" required>
+                        <option value="">-- 선택하세요 --</option>
+                        <option value="24">24개월</option>
+                        <option value="36">36개월</option>
+                        <option value="48">48개월</option>
+                        <option value="60">60개월</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">희망 월 납입액 (참고용)</label>
+                    <input type="text" id="budget" name="budget" placeholder="예: 60만원대 (선택 사항)">
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-details">문의 내용</label>
+                    <textarea id="inquiry-details" name="inquiry_details" rows="5" placeholder="궁금한 점이나 요청사항을 자세히 기재해주세요. (AI 기반 맞춤 상담에 활용됩니다.)"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">무료 견적 문의 접수하기 🚀</button>
+                </div>
+            </form>
+        </section>
     </main>
-  </body>
-</html>
+
+    <script>
+        document.querySelectorAll('dl dt').forEach((dt) => {
+            dt.addEventListener('click', () => {
+                const isExpanded = dt.getAttribute('aria-expanded') === 'true';
+                dt.classList.toggle('active');
+                dt.setAttribute('aria-expanded', !isExpanded);
+            });
+            dt.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    dt.click();
+                }
+            });
+        });
+
+        // Basic Charting Example (using a simple text-based representation if actual charting library isn't available)
+        // For a real implementation, you'd use Chart.js, Plotly.js, etc.
+        const chartCanvas = document.getElementById('chargingCostChart');
+        if (chartCanvas) {
+            const ctx = chartCanvas.getContext('2d');
+            if (ctx) {
+                // Placeholder for actual chart rendering
+                // For this example, we'll just add a text note.
+                console.log("Chart rendering would happen here with a library like Chart.js");
+                // Example of how you *might* add text if canvas is too complex for AI agent to render fully:
+                ctx.font = '16px Noto Sans KR';
+                ctx.fillStyle = '#333';
+                ctx.textAlign = 'center';
+                ctx.fillText('그래프 시각화는 Chart.js와 같은 라이브러리를 통해 구현됩니다.', chartCanvas.width / 2, chartCanvas.height / 2);
+            }
+        }
+
+        // Form submission placeholder
+        document.getElementById('inquiryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('문의가 접수되었습니다! 전문가가 곧 연락드릴 예정입니다.');
+            this.reset(); // Reset form fields
+        });
+    </script>
+  
